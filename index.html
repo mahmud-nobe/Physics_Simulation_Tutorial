@@ -27,6 +27,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"
       rel="stylesheet"
     />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href='style.css'/>
 </head>
 <body>
   <div class = 'jumbotron text-center'>
@@ -63,13 +66,14 @@ data-mdb-ride="carousel"
 <!-- Inner -->
 <div class="carousel-inner py-4">
   <!-- Single item -->
-  <div class="carousel-item active">
+  <div class="carousel-item active" data-interval=5000>
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
-          <div class="card">
-            <video src="pendulum/chaos_double_pendulum.mp4" autoplay loop muted></video>
-
+          <div class="card card-1">
+            <div class="bg-image hover-zoom">
+              <video class="card-img-top" src="pendulum/chaos_double_pendulum.mp4" autoplay loop muted></video>
+            </div>
             <!--<img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/181.webp"
               class="card-img-top"
@@ -86,10 +90,12 @@ data-mdb-ride="carousel"
           </div>
         </div>
 
-        <div class="col-lg-4 d-none d-lg-block">
-          <div class="card">
-            <video src="N_body_simulation/trinary_star_orbit.mp4" autoplay loop muted></video>
-            <!-- <img
+        <div class="col-lg-4">
+          <div class="card card-2">
+            <div class="bg-image hover-zoom">
+              <video class="card-img-top" src="N_body_simulation/trinary_star_orbit.mp4" autoplay loop muted></video>
+            </div>
+              <!-- <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp"
               class="card-img-top"
               alt="Sunset Over the Sea"
@@ -105,10 +111,12 @@ data-mdb-ride="carousel"
           </div>
         </div>
 
-        <div class="col-lg-4 d-none d-lg-block">
-          <div class="card">
-            <video src="wave_equation/square_pulse_1d.mp4" autoplay loop muted></video>
-            <!-- <img
+        <div class="col-lg-4">
+          <div class="card card-3">
+            <div class="bg-image hover-zoom">
+              <video class="card-img-top" src="wave_equation/square_pulse_1d.mp4" autoplay loop muted></video>
+            </div>
+              <!-- <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/183.webp"
               class="card-img-top"
               alt="Sunset over the Sea"
@@ -119,7 +127,7 @@ data-mdb-ride="carousel"
                 Some quick example text to build on the card title and make up the bulk
                 of the card's content.
               </p>
-              <a href="https://github.com/mahmud-nobe/Physics_Simulation_Tutorial/tree/main/wave_equation/Wave_Equation_Final_Project.ipynb" class="btn btn-primary">Button</a>
+              <a href="https://github.com/mahmud-nobe/Physics_Simulation_Tutorial/tree/main/wave_equation/Wave_Equation_Final_Project.ipynb" class="btn btn-primary">See Code</a>
             </div>
           </div>
         </div>
@@ -128,59 +136,69 @@ data-mdb-ride="carousel"
   </div>
 
   <!-- Single item -->
-  <div class="carousel-item">
+  <div class="carousel-item" data-interval=5000>
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-12">
           <div class="card">
-            <img
+            <div class="bg-image hover-zoom">
+              <video class="card-img-top" src="fluid_dynamics/one_lid_Re_400_upto_t=7.mp4" autoplay loop muted></video>
+            </div>
+            <!-- <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp"
               class="card-img-top"
               alt="Fissure in Sandstone"
-            />
+            /> -->
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">CFD: Lid Driven Cavity</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk
                 of the card's content.
               </p>
-              <a href="#!" class="btn btn-primary">Button</a>
+              <a href="https://github.com/mahmud-nobe/Physics_Simulation_Tutorial/tree/main/fluid_dynamics/Assignment_3_CFD (1).ipynb" class="btn btn-primary">Button</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 d-none d-lg-block">
+        <div class="col-lg-4">
           <div class="card">
-            <img
+            <div class="bg-image hover-zoom">
+              <video class="card-img-top" src="spring-mass/damped_spring_mass.mp4" autoplay loop muted></video>
+            </div>
+            <!-- <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/185.webp"
               class="card-img-top"
               alt="Storm Clouds"
-            />
+            /> -->
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Spring with Damping</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk
                 of the card's content.
               </p>
-              <a href="#!" class="btn btn-primary">Button</a>
+              <a href="https://github.com/mahmud-nobe/Physics_Simulation_Tutorial/tree/main/spring-mass/Assignment_Part_3__Spring-Mass_System.ipynb" class="btn btn-primary">Button</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 d-none d-lg-block">
+        <div class="col-lg-4">
           <div class="card">
-            <img
+            <div class="bg-image hover-zoom">
+              <video class="card-img-top" src="Traffic_Light/traffic_lba.mp4" autoplay loop muted></video>
+            </div>
+            <!-- <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/186.webp"
               class="card-img-top"
               alt="Hot Air Balloons"
-            />
+            /> -->
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk
                 of the card's content.
               </p>
-              <a href="#!" class="btn btn-primary">Button</a>
+              <a href="Traffic_Light/CS166 LBA (1).pdf" class="btn btn-primary" target="_blank">See Paper</a>
+              <a href="https://github.com/mahmud-nobe/Physics_Simulation_Tutorial/tree/main/Traffic_Light/Copy_of_CS166_LBA (1).ipynb" class="btn btn-primary" target="_blank">See Code</a>
             </div>
           </div>
         </div>
@@ -189,28 +207,31 @@ data-mdb-ride="carousel"
   </div>
 
   <!-- Single item -->
-  <div class="carousel-item">
+  <div class="carousel-item" data-interval=5000>
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <div class="col-lg-4">
           <div class="card">
-            <img
+            <div class="bg-image hover-zoom">
+              <video class="card-img-top" src="Lorentz_Attractor/lorenz_attractor_r=28_fast.mp4" autoplay loop muted></video>
+            </div>
+            <!-- <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/187.webp"
               class="card-img-top"
               alt="Peaks Against the Starry Sky"
-            />
+            /> -->
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Lorentz (Strange) Attractor</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up the bulk
                 of the card's content.
               </p>
-              <a href="#!" class="btn btn-primary">Button</a>
+              <a href="https://github.com/mahmud-nobe/Physics_Simulation_Tutorial/tree/main/Lorentz_Attractor/Lorentz_Attractor.ipynb" class="btn btn-primary">Button</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+        <div class="col-lg-4">
           <div class="card">
             <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/188.webp"
@@ -228,7 +249,7 @@ data-mdb-ride="carousel"
           </div>
         </div>
 
-        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+        <div class="col-lg-4">
           <div class="card">
             <img
               src="https://mdbcdn.b-cdn.net/img/new/standard/nature/189.webp"
