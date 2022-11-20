@@ -8,9 +8,9 @@
 }
 
 .carousel-dark .carousel-indicators [data-mdb-target]{
-    width:1.5rem;
-    height:1.5rem;
-    border-radius: 100%;
+    width:1.25rem;
+    height:1.25rem;
+    border-radius: 70%;
     background-color: #4285f4;
     margin-bottom: -.75rem;
     /* width: 20px;
