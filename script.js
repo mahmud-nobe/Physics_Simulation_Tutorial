@@ -7,10 +7,10 @@ window.addEventListener('resize', function() {
     //console.log(window.innerWidth);
     carousel = d3.select('.carousel');
     if (window.innerWidth < 575) {
-        carousel.attr("data-mdb-interval", 20000)
+        carousel.attr("data-mdb-interval", 16000)
     }
     else {
-        carousel.attr("data-mdb-interval", 10000)
+        carousel.attr("data-mdb-interval", 8000)
     }
     //console.log(carousel.attr('data-mdb-interval'));
 })
